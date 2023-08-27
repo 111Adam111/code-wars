@@ -19,8 +19,11 @@
 // My solution:
 
 function topThreeWords(text) {
-    const words = text.replace(/([^a-zA-Z'])+/g, ' ')
-    .toLowerCase().split(' ').reduce((map, word)=>{
+    const words = text
+    .replace(/([^a-zA-Z'])+/g, ' ')
+    .toLowerCase()
+    .split(' ')
+    .reduce((map, word)=>{
       if (word && word !== "'") {
         if (map[word]) map[word]++;
         else map[word] = 1;
