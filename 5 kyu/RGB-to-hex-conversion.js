@@ -23,8 +23,7 @@ function rgb(r, g, b){
       else {
         const nums = [Math.floor(val / 16), val % 16]
         nums.forEach(num => {
-          if (num === 0) hex += '0'
-          if (num > 0 && num <= 9) hex += num
+          if (num >= 0 && num <= 9) hex += num
           if (num > 9) hex += String.fromCharCode(num + 55)
         })
       }
