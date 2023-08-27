@@ -1,4 +1,6 @@
-//Task:
+// Consonant value
+
+// Task:
 
 // Given a lowercase string that has alphabetic characters only and no spaces, 
 // return the highest value of consonant substrings. 

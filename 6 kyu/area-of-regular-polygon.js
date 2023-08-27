@@ -1,3 +1,5 @@
+// Calculate the area of a regular n sides polygon inside a circle of radius r
+
 // Task:
 
 // It should calculate the area of a regular polygon of numberOfSides inside 
