@@ -21,13 +21,13 @@
 
 // My solution:
 
-function generateHashtag (str) {
-  if (str){
-    const hashtag = str
-      .split(' ')
-      .map(word => word && word[0].toUpperCase() + word.slice(1))
-      .join('')
-    return (!hashtag || hashtag.length > 139) ?  false : '#' + hashtag
-  }
-  return false
+function generateHashtag(str) {
+    if (str) {
+        const hashtag = str
+            .split(' ')
+            .map((word) => word && word[0].toUpperCase() + word.slice(1))
+            .join('')
+        return !hashtag || hashtag.length > 139 ? false : '#' + hashtag
+    }
+    return false
 }

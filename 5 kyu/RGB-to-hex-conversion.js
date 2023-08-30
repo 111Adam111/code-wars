@@ -16,17 +16,17 @@
 
 // My solution:
 
-function rgb(r, g, b){
-    return [r,g,b].reduce((hex,val) => {
-      if (val < 0) hex += '00'
-      if (val > 255) hex += 'FF'
-      else {
-        const nums = [Math.floor(val / 16), val % 16]
-        nums.forEach(num => {
-          if (num >= 0 && num <= 9) hex += num
-          if (num > 9) hex += String.fromCharCode(num + 55)
-        })
-      }
-      return hex
-    },'')
+function rgb(r, g, b) {
+    return [r, g, b].reduce((hex, val) => {
+        if (val < 0) hex += '00'
+        if (val > 255) hex += 'FF'
+        else {
+            const nums = [Math.floor(val / 16), val % 16]
+            nums.forEach((num) => {
+                if (num >= 0 && num <= 9) hex += num
+                if (num > 9) hex += String.fromCharCode(num + 55)
+            })
+        }
+        return hex
+    }, '')
 }

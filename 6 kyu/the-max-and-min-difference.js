@@ -2,8 +2,8 @@
 
 // Task:
 
-// Given two array of integers(arr1,arr2). Your task is going to find a pair of numbers(an element in arr1, and another element in arr2), 
-// their difference is as big as possible(absolute value); Again, you should to find a pair of numbers, their difference is as small as possible. 
+// Given two array of integers(arr1,arr2). Your task is going to find a pair of numbers(an element in arr1, and another element in arr2),
+// their difference is as big as possible(absolute value); Again, you should to find a pair of numbers, their difference is as small as possible.
 // Return the maximum and minimum difference values by an array: [  max difference,  min difference  ]
 
 // For example:
@@ -20,15 +20,15 @@
 
 // My solution:
 
-function maxAndMin(arr1,arr2){
-    let max = 0;
-    let min = 1000000;
-    arr1.forEach(num1=>{
-      arr2.forEach(num2 =>{
-        const diff = Math.abs(num1 - num2)
-        max = diff > max ? diff : max
-        min = diff < min ? diff : min
-      })
+function maxAndMin(arr1, arr2) {
+    let max = 0
+    let min = 1000000
+    arr1.forEach((num1) => {
+        arr2.forEach((num2) => {
+            const diff = Math.abs(num1 - num2)
+            max = diff > max ? diff : max
+            min = diff < min ? diff : min
+        })
     })
     return [max, min]
-  }
+}
